@@ -41,7 +41,7 @@ export async function POST(req) {
     let finalText = "";
     try {
       const response = await client.messages.create({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-5",
         max_tokens: 1500,
         system: SYSTEM_PROMPT,
         tools: [{ type: "web_search_20250305", name: "web_search" }],
@@ -58,7 +58,7 @@ export async function POST(req) {
           }));
 
         const followUp = await client.messages.create({
-          model: "claude-sonnet-4-20250514",
+          model: "claude-sonnet-4-5",
           max_tokens: 1500,
           system: SYSTEM_PROMPT,
           tools: [{ type: "web_search_20250305", name: "web_search" }],
@@ -75,7 +75,7 @@ export async function POST(req) {
       }
     } catch (searchErr) {
       const fallback = await client.messages.create({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-sonnet-4-5",
         max_tokens: 1500,
         system: SYSTEM_PROMPT,
         messages: messages.map((m) => ({ role: m.role, content: m.content })),

@@ -1,0 +1,19 @@
+{
+  "name": "ev-advisor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "15.3.2",
+    "react": "^19",
+    "react-dom": "^19",
+    "@anthropic-ai/sdk": "^0.24.0",
+    "xlsx": "^0.18.5",
+    "stripe": "^14.0.0",
+    "@stripe/stripe-js": "^3.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@500&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body { font-family: 'DM Sans', sans-serif; background: #fafaf8; }
+
+@keyframes pulse {
+  0%, 100% { opacity: .3; transform: scale(.8); }
+  50% { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+textarea:focus { outline: none; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: #d3d1c7; border-radius: 2px; }
+
+.sbtn:hover { background: #e1f5ee !important; border-color: #1D9E75 !important; color: #085041 !important; }
+.sendbtn:hover:not(:disabled) { background: #085041 !important; }
+.sendbtn:disabled { opacity: .4; cursor: not-allowed; }
+.upbtn:hover { background: #e1f5ee !important; border-color: #1D9E75 !important; }
+.dz:hover { background: #e1f5ee !important; border-color: #1D9E75 !important; }

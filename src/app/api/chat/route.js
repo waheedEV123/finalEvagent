@@ -83,7 +83,11 @@ export async function POST(req) {
       return Response.json({ error: "query_limit_reached", used, limit, plan }, { status: 429 });
     }
 
-    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+  import Anthropic from "@anthropic-ai/sdk";
+
+const client = new Anthropic({
+  apiKey: process.env.ANTHROPIC_API_KEY || "",
+});
 
     let finalText = "";
     try {

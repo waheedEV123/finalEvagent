@@ -11,9 +11,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.3.3",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+   "next": "15.3.6",
+"react": "19.1.4",
+"react-dom": "19.1.4",
     "@anthropic-ai/sdk": "^0.24.0",
     "xlsx": "^0.18.5",
     "stripe": "^14.0.0",
